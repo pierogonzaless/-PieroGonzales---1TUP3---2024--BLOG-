@@ -1,0 +1,186 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #8a7a7a33;
+    color: #000000;
+    padding: 20px;
+}
+
+/* Header */
+.siteheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.siteheader .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.siteheader .navegacion ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.siteheader .navegacion a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.siteheader .navegacion a:hover {
+    color: #ff6b6b;
+}
+
+.siteheader .busqueda input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Container: Flexbox para layout */
+.container {
+    display: flex;
+    margin-top: 20px;
+}
+
+/* Main Content */
+.main {
+    flex: 3;
+}
+
+.post {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.post h2 {
+    margin-bottom: 10px;
+}
+
+.post .date {
+    font-size: 12px;
+    color: #999;
+}
+
+.post img {
+    max-width: 90%; /* Ajusta el ancho máximo a un porcentaje del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: block; /* Asegura que las imágenes no se alineen al lado de otros elementos */
+    margin-left: auto; /* Centra la imagen */
+    margin-right: auto; /* Centra la imagen */
+}
+
+
+.post p {
+    margin-bottom: 1    0px;
+}
+
+/* Comentarios */
+.comentarios textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.comentarios button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comentarios button:hover {
+    background-color: #ff6b6b;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.sidebar .categorias,
+.sidebar .ultimo,
+.sidebar .Redes {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #ff6b6b;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.site-footer a {
+    color:gray;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.site-footer a:hover {
+    color:#ff6b6b ;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-left: 0;
+    }
+}
